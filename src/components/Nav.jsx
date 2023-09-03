@@ -1,41 +1,93 @@
+import React, { useState } from "react";
 import { hamburger } from "../assets/icons";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
+import SignInSignUpModal from "./SignInSignUp";
 
 const Nav = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(
+    localStorage.getItem("loggedIn") === "true"
+  );
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleSignIn = (success) => {
+    setLoggedIn(success);
+    if (success) {
+      localStorage.setItem("loggedIn", true);
+    }
+  };
+
+  const handleSignOut = () => {
+    setLoggedIn(false);
+    localStorage.removeItem("loggedIn");
+  };
+
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
-      <nav className="flex justify-between items-center max-container">
-        <a href="/">
-          <img
-            src={headerLogo}
-            alt="logo"
-            width={129}
-            height={29}
-            className="m-0 w-[129px] h-[29px]"
-          />
+    <header className="px-4 py-3 bg-gray-800 text-white">
+      <div className="flex items-center justify-between max-w-6xl mx-auto">
+        <a href="/" className="text-2xl font-semibold">
+          <img src={headerLogo} alt="logo" className="w-32" />
         </a>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+        <ul className="hidden space-x-6 lg:flex">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-gray"
+                className="hover:text-blue-500 transition duration-300"
               >
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
-        <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
-          <a href="/">Sign in</a>
-          <span>/</span>
-          <a href="/">Explore now</a>
+        {loggedIn ? (
+          <div className="flex space-x-4 items-center">
+            <button
+              className="text-blue-500 hover:underline"
+              onClick={handleSignOut}
+            >
+              Sign out
+            </button>
+          </div>
+        ) : (
+          <>
+            <div className="hidden lg:flex space-x-4 items-center">
+              <button
+                className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
+                onClick={openModal}
+              >
+                Sign in
+              </button>
+            </div>
+            <div className="lg:hidden">
+              <button
+                className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
+                onClick={openModal}
+              >
+                Sign in
+              </button>
+            </div>
+          </>
+        )}
+        <div className="lg:hidden">
+          <button className="text-white" onClick={openModal}>
+            <img src={hamburger} alt="hamburger icon" className="w-6 h-6" />
+          </button>
         </div>
-        <div className="hidden max-lg:block">
-          <img src={hamburger} alt="hamburger icon" width={25} height={25} />
-        </div>
-      </nav>
+      </div>
+      <SignInSignUpModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        onSignIn={handleSignIn}
+      />
     </header>
   );
 };
