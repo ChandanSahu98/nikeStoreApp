@@ -1,9 +1,9 @@
 import Hero from "./Hero";
 import PopularProducts from "./PopularProducts";
-import SuperQuality from "./SuperQuality";
+import SuperQuality from "./SuperbQuality";
 import Services from "./Services";
 import SpecialOffer from "./SpecialOffer";
-import CustomerReviews from "./CustomerReviews";
+import CustomerReviews from "./CustomerReview";
 import Subscribe from "./Subscribe";
 import Footer from "./Footer";
 
