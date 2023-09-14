@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { hamburger } from "../assets/icons";
 import { headerLogo } from "../assets/images";
 import { navLinks } from "../constants";
@@ -6,6 +6,7 @@ import SignInSignUpModal from "./SignInSignUp";
 
 const Nav = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [loggedIn, setLoggedIn] = useState(
     localStorage.getItem("loggedIn") === "true"
   );
@@ -30,8 +31,27 @@ const Nav = () => {
     localStorage.removeItem("loggedIn");
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="px-4 py-3 bg-gray-800 text-white">
+    <header
+      className={`px-4 py-3 bg-gray-800 text-white sticky top-0 z-50 ${
+        isScrolled ? "scrolled" : ""
+      }`}
+    >
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         <a href="/" className="text-2xl font-semibold">
           <img src={headerLogo} alt="logo" className="w-32" />
@@ -60,14 +80,6 @@ const Nav = () => {
         ) : (
           <>
             <div className="hidden lg:flex space-x-4 items-center">
-              <button
-                className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
-                onClick={openModal}
-              >
-                Sign in
-              </button>
-            </div>
-            <div className="lg:hidden">
               <button
                 className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
                 onClick={openModal}

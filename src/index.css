@@ -55,4 +55,8 @@
   .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
+
+  .scrolled {
+    @apply opacity-90 transition-all duration-150 ease-in;
+  }
 }
