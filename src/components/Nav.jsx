@@ -48,7 +48,7 @@ const Nav = () => {
 
   return (
     <header
-      className={`px-4 py-3 bg-gray-800 text-white sticky top-0 z-50 ${
+      className={`px-4 py-3 bg-red-500 text-gray-900 sticky top-0 z-50 shadow ${
         isScrolled ? "scrolled" : ""
       }`}
     >
@@ -81,7 +81,7 @@ const Nav = () => {
           <>
             <div className="hidden lg:flex space-x-4 items-center">
               <button
-                className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
+                className="text-red-500 bg-white  hover:bg-black px-4 py-2 rounded"
                 onClick={openModal}
               >
                 Sign in
