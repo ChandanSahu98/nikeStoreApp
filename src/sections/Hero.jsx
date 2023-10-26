@@ -5,6 +5,7 @@ import { Button, ShoeCard } from "../components";
 import { bigShoe1 } from "../assets/images";
 import { arrowRight } from "../assets/icons";
 
+
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
@@ -18,8 +19,8 @@ const Hero = () => {
           New collections
         </p>
 
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
+        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[60px] max-sm:leading-[60px] font-bold bg-transparent">
+          <span className=" xl:whitespace-nowrap relative z-10 pr-10">
             The New Arrival
           </span>
           <br />
@@ -43,13 +44,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
-        <img
+      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-20 bg-center m-0 ">
+        <img //
           src={bigShoeImg}
           alt="shoe colletion"
-          width={610}
-          height={502}
-          className="object-contain relative z-10"
+          width={1920}
+          height={1080}
+          className="object-contain relative z-10 mb-40 -rotate-90 max-h-60 min-[100px]:text-center max-[320px]:bg-white"
         />
 
         <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">

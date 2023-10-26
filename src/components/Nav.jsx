@@ -54,7 +54,7 @@ const Nav = () => {
     >
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         <a href="/" className="text-2xl font-semibold">
-          <img src={headerLogo} alt="logo" className="w-32" />
+          <img src={headerLogo} alt="logo" className="w-32 " />
         </a>
         <ul className="hidden space-x-6 lg:flex">
           {navLinks.map((item) => (
