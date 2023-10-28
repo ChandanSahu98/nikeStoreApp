@@ -2,12 +2,13 @@ import { useState } from "react";
 
 import { shoes, statistics } from "../constants";
 import { Button, ShoeCard } from "../components";
-import { bigShoe1 } from "../assets/images";
+import { bigGuitar1 } from "../assets/images";
 import { arrowRight } from "../assets/icons";
 
 
 const Hero = () => {
-  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
+  // const [bigGuigar1, setBigShoeImg] = useState(bigShoe1);
+  const [bigGuigar1, setBigGuigarImg] = useState(bigGuitar1);
 
   return (
     <section
@@ -46,11 +47,11 @@ const Hero = () => {
 
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-20 bg-center m-0 ">
         <img //
-          src={bigShoeImg}
+          src={bigGuigar1}
           alt="shoe colletion"
-          width={1920}
-          height={1080}
-          className="object-contain relative z-10 mb-40 -rotate-90 max-h-60 min-[100px]:text-center max-[320px]:bg-white"
+          width={1280}
+          height={720}
+          className="object-contain relative z-10 mb-40 -rotate-90  "
         />
 
         <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
@@ -59,8 +60,8 @@ const Hero = () => {
               <ShoeCard
                 index={index}
                 imgURL={image}
-                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
-                bigShoeImg={bigShoeImg}
+                changeBigGuitarImage={(shoe) => setBigGuigarImg(shoe)}
+                bigGuigar1={bigGuigar1}
               />
             </div>
           ))}

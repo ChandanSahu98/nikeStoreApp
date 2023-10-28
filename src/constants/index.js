@@ -7,9 +7,12 @@ import {
   twitter,
 } from "../assets/icons";
 import {
-  bigShoe1,
-  bigShoe2,
-  bigShoe3,
+  // bigShoe1,
+  bigGuitar1,
+  bigGuitar2,
+  bigGuitar3,
+  // bigShoe2,
+  // bigShoe3,
   customer1,
   customer2,
   shoe4,
@@ -31,15 +34,15 @@ export const navLinks = [
 export const shoes = [
   {
     thumbnail: thumbnailShoe1,
-    bigShoe: bigShoe1,
+    bigGuitar: bigGuitar1,
   },
   {
     thumbnail: thumbnailShoe2,
-    bigShoe: bigShoe2,
+    bigGuitar: bigGuitar2,
   },
   {
     thumbnail: thumbnailShoe3,
-    bigShoe: bigShoe3,
+    bigGuitar: bigGuitar3,
   },
 ];
 
@@ -62,7 +65,7 @@ export const products = [
   },
   {
     imgURL: shoe6,
-    name: "Nike Air Jordan-100",
+    name: "Nike Air Jordan-100",  
     price: "$220.20",
   },
   {

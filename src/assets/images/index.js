@@ -1,6 +1,9 @@
-import bigShoe1 from './big-shoe1.png'
-import bigShoe2 from './big-shoe2.png'
-import bigShoe3 from './big-shoe3.png'
+// import bigShoe1 from './big-shoe1.png'
+import bigGuitar1 from './big-Guitar1.png'
+import bigGuitar2 from './big-Guitar2.png'
+import bigGuitar3 from './big-Guitar3.png'
+// import bigShoe2 from './big-shoe2.png'
+// import bigShoe3 from './big-shoe3.png'
 
 import customer1 from './customer1.jpeg'
 import customer2 from './customer2.svg'
@@ -22,9 +25,12 @@ import thumbnailShoe2 from './thumbnail-shoe2.svg'
 import thumbnailShoe3 from './thumbnail-shoe3.svg'
 
 export {
-    bigShoe1,
-    bigShoe2,
-    bigShoe3,
+    // bigShoe1,
+    bigGuitar1,
+    bigGuitar2,
+    bigGuitar3,
+    // bigShoe2,
+    // bigShoe3,
 
     customer1,
     customer2,
