@@ -16,11 +16,11 @@ const ShoeCard = ({ imgURL, changeBigGuitarImage, bigShoeImg }) => {
     >
       <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
         <img
-          src={imgURL.thumbnail}
+          src={imgURL.cardGuitar}
           alt="shoe colletion"
-          width={127}
+          width={150}
           height={103.34}
-          className="object-contain"
+          className="object-contain -rotate-90"
         />
       </div>
     </div>

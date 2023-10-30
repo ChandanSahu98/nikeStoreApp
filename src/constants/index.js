@@ -19,9 +19,12 @@ import {
   shoe5,
   shoe6,
   shoe7,
-  thumbnailShoe1,
-  thumbnailShoe2,
-  thumbnailShoe3,
+  // thumbnailShoe1,
+  // thumbnailShoe2,
+  // thumbnailShoe3,
+  cardGuitar1,
+  cardGuitar2,
+  cardGuitar3,
 } from "../assets/images";
 
 export const navLinks = [
@@ -33,15 +36,15 @@ export const navLinks = [
 
 export const shoes = [
   {
-    thumbnail: thumbnailShoe1,
+    cardGuitar: cardGuitar1,
     bigGuitar: bigGuitar1,
   },
   {
-    thumbnail: thumbnailShoe2,
+    cardGuitar: cardGuitar2,
     bigGuitar: bigGuitar2,
   },
   {
-    thumbnail: thumbnailShoe3,
+    cardGuitar: cardGuitar3,
     bigGuitar: bigGuitar3,
   },
 ];

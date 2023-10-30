@@ -20,9 +20,15 @@ import shoe7 from './shoe7.svg'
 import shoe8 from './shoe8.svg'
 
 import thumbnailBackground from './thumbnail-background.svg'
-import thumbnailShoe1 from './thumbnail-shoe1.svg'
-import thumbnailShoe2 from './thumbnail-shoe2.svg'
-import thumbnailShoe3 from './thumbnail-shoe3.svg'
+// import thumbnailShoe1 from './thumbnail-shoe1.svg'
+// import thumbnailShoe2 from './thumbnail-shoe2.svg'
+// import thumbnailShoe3 from './thumbnail-shoe3.svg'
+import cardGuitar1 from './card-Guitar1.png'
+import cardGuitar2 from './card-Guitar2.png'
+import cardGuitar3 from './card-Guitar3.png'
+
+
+
 
 export {
     // bigShoe1,
@@ -46,7 +52,8 @@ export {
     shoe8,
 
     thumbnailBackground,
-    thumbnailShoe1,
-    thumbnailShoe2,
-    thumbnailShoe3
+    cardGuitar1,
+    cardGuitar2,
+    cardGuitar3
+   
 }
