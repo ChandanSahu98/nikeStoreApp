@@ -62,23 +62,23 @@ export const statistics = [
 export const products = [
   {
     imgURL: PPGuitar4,
-    name: "Nike Air Jordan-01",
-    price: "$200.20",
+    name: "AERODYNE SPECIAL JAZZ BASS®",
+    price: "$999.99",
   },
   {
     imgURL: PPGuitar5,
-    name: "Nike Air Jordan-10",
-    price: "$210.20",
+    name: "VINTERA® II '60S STRATOCASTER®",
+    price: "$1,149.99",
   },
   {
     imgURL: PPGuitar6,
-    name: "Nike Air Jordan-100",  
-    price: "$220.20",
+    name: "AMERICAN PROFESSIONAL II STRATOCASTER®",  
+    price: "1,699.99",
   },
   {
     imgURL: PPGuitar7,
-    name: "Nike Air Jordan-001",
-    price: "$230.20",
+    name: "PLAYER PLUS NASHVILLE TELECASTER®",
+    price: "$1,029.99",
   },
 ];
 
@@ -122,12 +122,12 @@ export const footerLinks = [
   {
     title: "Products",
     links: [
-      { name: "Air Force 1", link: "/" },
-      { name: "Air Max 1", link: "/" },
-      { name: "Air Jordan 1", link: "/" },
-      { name: "Air Force 2", link: "/" },
-      { name: "Nike Waffle Racer", link: "/" },
-      { name: "Nike Cortez", link: "/" },
+      { name: "Stratocaster", link: "/" },
+      { name: "Telecaster", link: "/" },
+      { name: "Mustang", link: "/" },
+      { name: "Jaguar", link: "/" },
+      { name: "Jag-Stang", link: "/" },
+      { name: "Jazzmaster", link: "/" },
     ],
   },
   {
@@ -143,7 +143,7 @@ export const footerLinks = [
   {
     title: "Get in touch",
     links: [
-      { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+      { name: "customer@fender.com", link: "mailto:customer@fender.com" },
       { name: "+92554862354", link: "tel:+92554862354" },
     ],
   },

@@ -61,7 +61,7 @@ const Nav = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="hover:text-blue-500 transition duration-300"
+                className=" bg-red-500 transition duration-300"
               >
                 {item.label}
               </a>
@@ -71,7 +71,7 @@ const Nav = () => {
         {loggedIn ? (
           <div className="flex space-x-4 items-center">
             <button
-              className="text-blue-500 hover:underline"
+              className=" bg-red-500 hover:underline"
               onClick={handleSignOut}
             >
               Sign out

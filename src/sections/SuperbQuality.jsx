@@ -1,4 +1,4 @@
-import { shoe8 } from "../assets/images";
+import { Guitar8 } from "../assets/images";
 import { Button } from "../components";
 
 const SuperQuality = () => {
@@ -26,11 +26,11 @@ Meticulously crafted guitar Premium style Designed to elevate your experience, d
 
       <div className="flex-1 flex justify-center items-center">
         <img
-          src={shoe8}
+          src={Guitar8}
           alt="product detail"
           width={570}
           height={522}
-          className="object-contain"
+          className="object-contain drop-shadow-lg  "
         />
       </div>
     </section>

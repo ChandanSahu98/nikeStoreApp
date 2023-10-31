@@ -48,13 +48,13 @@ const Hero = () => {
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-20 bg-center m-0 ">
         <img //
           src={bigGuigar1}
-          alt="shoe colletion"
+          alt="shoe colletion "
           width={1280}
           height={720}
-          className=" "
+          className="  md:max-w-2xl     "
         />
 
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[40%] sm:left-[10%] max-sm:px-6">
           {shoes.map((image, index) => (
             <div key={index}>
               <ShoeCard
@@ -72,3 +72,11 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// 
+// Breakpoint prefix	Minimum width	CSS
+// sm	640px	@media (min-width: 640px) { ... }
+// md	768px	@media (min-width: 768px) { ... }
+// lg	1024px	@media (min-width: 1024px) { ... }
+// xl	1280px	@media (min-width: 1280px) { ... }
+// 2xl	1536px	@media (min-width: 1536px) { ... }

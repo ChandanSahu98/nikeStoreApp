@@ -66,7 +66,7 @@ const SignInSignUpModal = ({ isOpen, onClose, onSignIn }) => {
         {error && <p className="text-red-500 mb-4">{error}</p>}
         {isSignIn ? (
           <button
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+            className="w-full bg-red-500 text-white py-2 rounded hover:bg-rose-950"
             onClick={handleSignIn}
           >
             Sign in
@@ -82,7 +82,7 @@ const SignInSignUpModal = ({ isOpen, onClose, onSignIn }) => {
         <p className="text-center mt-4">
           {isSignIn ? "Don't have an account?" : "Already have an account?"}{" "}
           <button
-            className="text-blue-500 hover:underline"
+            className="text-red-500 hover:underline"
             onClick={() => {
               setError("");
               setIsSignIn(!isSignIn);

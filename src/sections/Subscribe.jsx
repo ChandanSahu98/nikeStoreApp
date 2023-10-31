@@ -10,6 +10,10 @@ const Subscribe = () => {
         Sign Up for
         <span className="text-coral-red"> Updates </span>& Newsletter
       </h3>
+      <p className=" text-xl items-center max-lg:flex-col gap-10 text-black sm:max-w-sm ">
+      Don't miss out!
+      Be the first to know about new products, featured content, exclusive offers and giveaways.
+          </p>
       <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full">
         <input type="text" placeholder="subscribe@nike.com" className="input" />
         <div className="flex max-sm:justify-end items-center max-sm:w-full">
