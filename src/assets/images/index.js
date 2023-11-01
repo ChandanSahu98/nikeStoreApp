@@ -12,7 +12,8 @@ import customer2 from './customer2.svg'
 import logoGuitarFT from './logoGuitarFT.png'
 import headerLogo from './header-logo.svg'
 
-import offer from './offer.svg'
+// import offer from './offer.svg'
+import offer1 from './off.png'
 
 import PPGuitar4 from './popular-Guitars4.svg'
 import PPGuitar5 from './popular-Guitars5.svg'
@@ -40,6 +41,7 @@ import slieGuitar3 from './slieGuitar3.jpg'
 
 
 
+
 export {
     // bigShoe1,
     bigGuitar1,
@@ -55,7 +57,8 @@ export {
     // footerLogo,
     headerLogo,
 
-    offer,
+    // offer,
+    offer1,
     // shoe4,
     // shoe5,
     // shoe6,
