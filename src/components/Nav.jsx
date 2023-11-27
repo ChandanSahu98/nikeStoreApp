@@ -48,20 +48,20 @@ const Nav = () => {
 
   return (
     <header
-      className={`px-4 py-3 bg-gray-800 text-white sticky top-0 z-50 ${
+      className={`px-4 py-3 bg-red-500 text-gray-900 sticky top-0 z-50 shadow ${
         isScrolled ? "scrolled" : ""
       }`}
     >
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         <a href="/" className="text-2xl font-semibold">
-          <img src={headerLogo} alt="logo" className="w-32" />
+          <img src={headerLogo} alt="logo" className="w-32 " />
         </a>
         <ul className="hidden space-x-6 lg:flex">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
-                className="hover:text-blue-500 transition duration-300"
+                className=" bg-red-500 transition duration-300"
               >
                 {item.label}
               </a>
@@ -71,7 +71,7 @@ const Nav = () => {
         {loggedIn ? (
           <div className="flex space-x-4 items-center">
             <button
-              className="text-blue-500 hover:underline"
+              className=" bg-red-500 hover:underline"
               onClick={handleSignOut}
             >
               Sign out
@@ -81,7 +81,7 @@ const Nav = () => {
           <>
             <div className="hidden lg:flex space-x-4 items-center">
               <button
-                className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
+                className="text-red-500 bg-white  hover:bg-black px-4 py-2 rounded"
                 onClick={openModal}
               >
                 Sign in

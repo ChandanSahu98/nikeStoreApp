@@ -7,18 +7,28 @@ import {
   twitter,
 } from "../assets/icons";
 import {
-  bigShoe1,
-  bigShoe2,
-  bigShoe3,
+  // bigShoe1,
+  bigGuitar1,
+  bigGuitar2,
+  bigGuitar3,
+  // bigShoe2,
+  // bigShoe3,
   customer1,
   customer2,
-  shoe4,
-  shoe5,
-  shoe6,
-  shoe7,
-  thumbnailShoe1,
-  thumbnailShoe2,
-  thumbnailShoe3,
+  PPGuitar4,
+  PPGuitar5,
+  PPGuitar6,
+  PPGuitar7,
+  // shoe4,
+  // shoe5,
+  // shoe6,
+  // shoe7,
+  // thumbnailShoe1,
+  // thumbnailShoe2,
+  // thumbnailShoe3,
+  cardGuitar1,
+  cardGuitar2,
+  cardGuitar3,
 } from "../assets/images";
 
 export const navLinks = [
@@ -30,16 +40,16 @@ export const navLinks = [
 
 export const shoes = [
   {
-    thumbnail: thumbnailShoe1,
-    bigShoe: bigShoe1,
+    cardGuitar: cardGuitar1,
+    bigGuitar: bigGuitar1,
   },
   {
-    thumbnail: thumbnailShoe2,
-    bigShoe: bigShoe2,
+    cardGuitar: cardGuitar2,
+    bigGuitar: bigGuitar2,
   },
   {
-    thumbnail: thumbnailShoe3,
-    bigShoe: bigShoe3,
+    cardGuitar: cardGuitar3,
+    bigGuitar: bigGuitar3,
   },
 ];
 
@@ -51,24 +61,24 @@ export const statistics = [
 
 export const products = [
   {
-    imgURL: shoe4,
-    name: "Nike Air Jordan-01",
-    price: "$200.20",
+    imgURL: PPGuitar4,
+    name: "AERODYNE SPECIAL JAZZ BASS®",
+    price: "$999.99",
   },
   {
-    imgURL: shoe5,
-    name: "Nike Air Jordan-10",
-    price: "$210.20",
+    imgURL: PPGuitar5,
+    name: "VINTERA® II '60S STRATOCASTER®",
+    price: "$1,149.99",
   },
   {
-    imgURL: shoe6,
-    name: "Nike Air Jordan-100",
-    price: "$220.20",
+    imgURL: PPGuitar6,
+    name: "AMERICAN PROFESSIONAL II STRATOCASTER®",  
+    price: "1,699.99",
   },
   {
-    imgURL: shoe7,
-    name: "Nike Air Jordan-001",
-    price: "$230.20",
+    imgURL: PPGuitar7,
+    name: "PLAYER PLUS NASHVILLE TELECASTER®",
+    price: "$1,029.99",
   },
 ];
 
@@ -112,12 +122,12 @@ export const footerLinks = [
   {
     title: "Products",
     links: [
-      { name: "Air Force 1", link: "/" },
-      { name: "Air Max 1", link: "/" },
-      { name: "Air Jordan 1", link: "/" },
-      { name: "Air Force 2", link: "/" },
-      { name: "Nike Waffle Racer", link: "/" },
-      { name: "Nike Cortez", link: "/" },
+      { name: "Stratocaster", link: "/" },
+      { name: "Telecaster", link: "/" },
+      { name: "Mustang", link: "/" },
+      { name: "Jaguar", link: "/" },
+      { name: "Jag-Stang", link: "/" },
+      { name: "Jazzmaster", link: "/" },
     ],
   },
   {
@@ -133,7 +143,7 @@ export const footerLinks = [
   {
     title: "Get in touch",
     links: [
-      { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+      { name: "customer@fender.com", link: "mailto:customer@fender.com" },
       { name: "+92554862354", link: "tel:+92554862354" },
     ],
   },

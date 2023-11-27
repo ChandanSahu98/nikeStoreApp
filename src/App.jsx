@@ -9,11 +9,13 @@ import {
   Subscribe,
   SuperQuality,
 } from "./sections";
+import Slid from "./sections/Slid";
 
 const App = () => {
   return (
     <main className="relative">
       <Nav />
+      <Slid/>
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
